@@ -8,7 +8,7 @@ and determine the paramters of the function to cause this minimum error. The fol
 #1: This example was given to us in class, and professor had already layed out the structure of how to find the curve fit and RMSE. Therefore I printed the parameters
 c[0]-c[3] to display the paramters for the given minimum error.
 
-#2: In this problem we were generating a error landscape by keeping two parameters fixed, in my case A = 25, and D = 50, and sweeping through the other paramters. The 
+#2: In this problem we were generating a error landscape by keeping two parameters fixed, and sweeping through the other paramters. The 
 error landscape is visualized through a grid. I created the error grid and swept parameters by creating a range of values the swept paramters could be through np.linspace
 and then created a function that looped through the C values and B values that were being swept, and then set the error grid of B and C values equal to the RMSE of the 
 function. I then created a mesh grid of the B and C values and plotted this with a color feature.
