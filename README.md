@@ -1,4 +1,4 @@
-# EE-399-HW-1
+# EE-399-HW
 This is the first homework assignment for EE 399 which is a machine learning class
 
 
