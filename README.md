@@ -1,7 +1,7 @@
 # EE-399-HW
 This is the first homework assignment for EE 399 which is a machine learning class
 
-
+HW1:
 The goal of this homework was to take a function explicitly given to us on the handout with an array of data points and write python code to determine the minimum error,
 and determine the paramters of the function to cause this minimum error. The following problems exapned on this result.
 
@@ -22,3 +22,19 @@ I then printed each error on the screen as well as the scatter plots and line fi
 The process for this problem was the exact same as #3. The question was to find the difference between the last two problems, and the answer was in the error. The error was
 much larger for #4 than #3 and this makes sense because the data array is a gradual increase in value and therefore skipping the middle data points would cause a huge 
 jump in value creating a larger error.
+
+
+
+HW 2:
+This file has a total of 39 different faces with about 65 lighting scenes for each
+face (2414 faces in all).
+The individual images are columns of the matrix X, where each image has been downsampled to 32×32
+pixels and converted into gray scale with values between 0 and 1. So the matrix is size 1024 × 2414. To
+important the file, use the following
+import numpy as np
+from scipy.io import loadmat
+results=loadmat(’yalefaces.mat’)
+X=results[’X’]
+
+a. For the first problem I loaded the file into the notebook using the given method to do so. I then followed 
+
