@@ -27,15 +27,15 @@ jump in value creating a larger error.
 
 HW 2:
 This file has a total of 39 different faces with about 65 lighting scenes for each
-face (2414 faces in all).
-
-The individual images are columns of the matrix X, where each image has been downsampled to 32×32
-
+face (2414 faces in all). The individual images are columns of the matrix X, where each image has been downsampled to 32×32
 pixels and converted into gray scale with values between 0 and 1. So the matrix is size 1024 × 2414. To important the file, use the following
 
 import numpy as np
+
 from scipy.io import loadmat
+
 results=loadmat(’yalefaces.mat’)
+
 X=results[’X’]
 
 (a) Compute a 100 × 100 correlation matrix C where you will compute the dot product (correlation)
