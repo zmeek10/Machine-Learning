@@ -25,6 +25,14 @@ jump in value creating a larger error.
 
 
 
+
+
+
+
+
+
+
+
 HW 2:
 This file has a total of 39 different faces with about 65 lighting scenes for each
 face (2414 faces in all). The individual images are columns of the matrix X, where each image has been downsampled to 32×32
