@@ -133,4 +133,4 @@ The SVM and decision trees seperation between all 10 digits is displayed below, 
 
 Overall The SVM and Decision tree was solidly different from the LDA on the easy and difficult seperation of two digits. The results for the SVM and decision tree are shown below with the code, and the LDA was shown earlier on the most difficult to seperate and easiest to seperate. 
 
-<img width="644" alt="image" src="https://user-images.githubusercontent.com/130122289/234180085-4feece0f-338c-477d-9e9f-f5e01e9ecfe6.png">
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/130122289/234180085-4feece0f-338c-477d-9e9f-f5e01e9ecfe6.png"> 
