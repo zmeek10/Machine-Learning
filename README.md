@@ -78,3 +78,59 @@ f. To compute the norm difference I took the absolute value of the first princip
 
 g. To calculate the variance I used the first 6 values from the SVD, squared it and then divided by the np.sum of s squared. Where s is the vector of singular values. I then multiplied it by 100 to calculate the total variance. I then printed each of the first 6 SVD modes. Then reshaped the SVD modes to 32x32, and looped through 6 times to print out the images in the yalefaces file in gray.
 
+
+
+
+HW 3: 
+The first step was to load the MNIST data and do an SVD analysis of the data while reshaping each image into a column vector. I did so by the code snippet below
+
+  <img width="271" alt="image" src="https://user-images.githubusercontent.com/130122289/234175726-4b6ff1f2-f7f6-40d4-bca1-e5dd02e8647b.png">
+  
+I then analyzed the data through an SVD algorithm, and then printed the singular value spectrum through the code below
+
+<img width="295" alt="image" src="https://user-images.githubusercontent.com/130122289/234175926-e8afa7d8-d45e-4c8f-9143-ab31152b5a5e.png">
+
+
+Based on the results showed below, using the elbow method we can choose r = 50 for good image reconstruction
+
+<img width="338" alt="image" src="https://user-images.githubusercontent.com/130122289/234176187-484b9655-fc8f-4742-bcd6-44778730898b.png">
+
+
+Interpretation of U, E, V matrices?
+
+The matrix U contains the left singular vectors representing the principal components. The V matrix contains right singular vectors that reconstruct data, and the E matrix are singular values that represent the square roots of the eigenvectors of X^TX
+
+
+I 3D plotted three selected V-modes through the code shown below, as well as the results shown below that
+
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/130122289/234176751-75a11c7e-403c-43ea-8c2f-5477f19540d7.png">
+
+<img width="221" alt="image" src="https://user-images.githubusercontent.com/130122289/234176777-1ecc8da3-cabe-4732-a072-acb9a9f5129b.png">
+
+
+After these tasks were finished, I projected the data into PCA space, and firstly picked two digits, 2 and 9, building an LDA to identify and classify them. I then picked three digits to try and figure out the accuracy between digits shown by code and result below
+
+
+
+<img width="532" alt="image" src="https://user-images.githubusercontent.com/130122289/234179380-5b8e754c-e164-4da5-a0bb-8413ede80870.png">
+
+
+
+I then figured out which two digits in the data set are the easiest and most difficult to seperate. This was a little bit of a guess and check as I plugged in values I thought were less compatible and then waited to see what the accuracy between them was. This is shown along with the results down below
+
+
+<img width="521" alt="image" src="https://user-images.githubusercontent.com/130122289/234177402-0208b975-cd79-480a-a773-be15edea315a.png">
+
+
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/130122289/234177545-8096f372-d273-4bd0-8a83-058a5f90330f.png">
+
+
+The SVM and decision trees seperation between all 10 digits is displayed below, with the SVM having a higher percentage than the decision tree
+
+
+<img width="444" alt="image" src="https://user-images.githubusercontent.com/130122289/234183807-ae581e74-375f-45ac-8f6e-a43a35eb5414.png">
+
+
+Overall The SVM and Decision tree was solidly different from the LDA on the easy and difficult seperation of two digits. The results for the SVM and decision tree are shown below with the code, and the LDA was shown earlier on the most difficult to seperate and easiest to seperate. 
+
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/130122289/234180085-4feece0f-338c-477d-9e9f-f5e01e9ecfe6.png">
