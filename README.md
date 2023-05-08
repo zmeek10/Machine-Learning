@@ -134,3 +134,42 @@ The SVM and decision trees seperation between all 10 digits is displayed below, 
 Overall The SVM and Decision tree was solidly different from the LDA on the easy and difficult seperation of two digits. The results for the SVM and decision tree are shown below with the code, and the LDA was shown earlier on the most difficult to seperate and easiest to seperate. 
 
 <img width="644" alt="image" src="https://user-images.githubusercontent.com/130122289/234180085-4feece0f-338c-477d-9e9f-f5e01e9ecfe6.png"> 
+
+
+
+
+
+
+
+HW 4:
+
+i. To fit the data to a three layer FFNN I start by importing the MLPRegressor, as I could not download tensorflow and keras libraries. I then reshaped X into a 2D array, and created the three layer FFNN through the line labele model as shown below. I then fit the model to the data, and predicted on new data points.
+
+
+<img width="562" alt="image" src="https://user-images.githubusercontent.com/130122289/236950323-400f1e03-08a7-408c-ae30-5e550239dff2.png">
+
+
+ii. To create the least squared error over the 20 training points, and then the error for the 10 test data points I did the following:
+
+
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/130122289/236950572-80135ff9-eaf0-4361-ae61-d21191e5c620.png">
+
+
+iii. I then repeated this process for the first 10 and last 10 as the training data, and the middle 10 as the test data, and the errors are as shown below:
+
+
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/130122289/236950890-facf325c-293b-4390-8d32-d2f7eda0abb5.png">
+
+
+iv. Comparing the data from the first hw error, and the error from now the results arent as expected. Theoretically The FFNN should be better for accuracy, but I believe the inability to download the keras library and fit the NN that way counted for the discrepency. In these results the error in hw1 was more accurate.
+
+MNIST Data:
+
+i. To compute the first 20 PCA modes of the digit images, I did a similar approach as in previous HWs, and then fit the FFNN, SVM, and Decision Tree to the training data. I then made predictions using the neural network and tested the accuracy for each one of the other classifiers. The results are shown below:
+
+
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/130122289/236952757-cc59575b-057b-4036-bc67-62c4476c9cd9.png">
+
+
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/130122289/236952797-b5a5b0d6-1776-4938-bfbd-173ad4b15cce.png">
+
