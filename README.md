@@ -33,6 +33,13 @@ jump in value creating a larger error.
 
 
 
+
+
+
+
+
+
+
 HW 2:
 This file has a total of 39 different faces with about 65 lighting scenes for each
 face (2414 faces in all). The individual images are columns of the matrix X, where each image has been downsampled to 32×32
@@ -173,3 +180,55 @@ i. To compute the first 20 PCA modes of the digit images, I did a similar approa
 
 <img width="371" alt="image" src="https://user-images.githubusercontent.com/130122289/236952797-b5a5b0d6-1776-4938-bfbd-173ad4b15cce.png">
 
+
+
+
+
+
+HW 5:
+
+
+1. The goal of the first problem was to train an NN to advance the solution of t to t + delta(t).
+   To do this I started by setting up the Lorenz system paramaters with sigma and beta being very similar to the code professor shared with us in class, and setting the rho values to be the given and predicted values of rho. I then created the Lorenz equation shown by the following code
+   
+   
+   
+   <img width="413" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/f2041139-69f5-4cd2-bf05-cd2461d4f211">
+
+
+Next I generated the trajectories for rho = 10, 28, 40
+
+
+<img width="428" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/859feaea-f0ea-4518-8d64-d30baaa5fcd7">
+
+
+I created training splits for the neural network, and fit the model to an MLPRegressor. Then I created the prediction for the lorenz equation, and plotted the predicted trajectories through the following snippet:
+
+
+
+<img width="621" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/8ab2c548-718d-4bd4-8497-e91ae58c5a37">
+
+
+<img width="402" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/f2dd1746-79e8-4d5c-a7d7-d394a17554a6">
+
+
+
+When rho=35, the actual and predicted values for the time series are a lot closer than when rho = 17
+
+
+
+
+
+
+2. For problem two, the goal was to compare FF, LSTM, and RNN Networks for forcasting the dynamics. Similar to the start of problem one, I set up the data with initial conditions, and derived the Lorenz equation. I then created the training split for the model and set up each Network to train the data as follows:
+
+
+
+<img width="627" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/1e8f47da-fe89-484c-96a5-19333115fcaf">
+
+
+Next I evaluated the models through predictions, and took the RMSE.
+
+
+
+<img width="560" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/24d70d45-000f-4e62-95ca-52daf8f9f8e6">
