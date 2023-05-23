@@ -262,6 +262,7 @@ This code focuses on Shallow Recurrent Decoders, or SHRED, a model taht learns a
 
 <img width="667" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/697bb6bb-9000-49fe-a56b-c8f54990c76a">
 <img width="727" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/1f1ccd34-8195-4b02-8a83-9617fc02ff10">
+<img width="426" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/a21040ab-b479-4afb-bc76-a490c1b62e22">
 
 
 
@@ -270,6 +271,8 @@ This code focuses on Shallow Recurrent Decoders, or SHRED, a model taht learns a
 
 <img width="704" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/507d5255-93c0-4649-b290-364421516c25">
 <img width="721" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/c8ec57b6-c9d8-40ca-871d-eb3471d36fc7">
+<img width="569" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/b5bf3b5b-da6e-4b58-8d28-7b0e681eb5db">
+
 
 5. The last task was to investigate the performance of SHRED model as a function of the number of sensors. Randomly using different sensor locations, the model is evaluated for the accuracy for varying sensor counts.
 
@@ -278,6 +281,8 @@ This code focuses on Shallow Recurrent Decoders, or SHRED, a model taht learns a
 
 
 <img width="716" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/43819311-f359-4bcc-839f-418fe35547bb">
+<img width="500" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/7a3d3a12-0122-43a2-a010-8cf0050ad501">
+
 
 
 Overall The tasks in the assignment helped me gain insight on the models capabilities, and reactions to various different factors.
