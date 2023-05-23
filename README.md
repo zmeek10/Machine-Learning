@@ -232,3 +232,52 @@ Next I evaluated the models through predictions, and took the RMSE.
 
 
 <img width="560" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/24d70d45-000f-4e62-95ca-52daf8f9f8e6">
+
+
+
+
+
+
+
+HW6:
+
+The assignment given to us focuses on 5 tasks. The first being to download the example code and data from the github repo https://github.com/Jan-Williams/pyshred
+This code focuses on Shallow Recurrent Decoders, or SHRED, a model taht learns a mapping from trajectories of sensor measurements to a high dimensional Spatio-temporal state. The data set used consists of sea-surface temperature, and atmospheric ozone concentration.
+
+
+
+<img width="806" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/dcebeb3b-3ec1-4e0f-87df-d663cba48c4c">
+
+<img width="824" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/5dff9f57-a761-40b7-8e7c-f10580e6ea0d">
+
+<img width="833" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/1c5aa027-1995-4d01-95a9-f2064f4b1944">
+
+2. The next task was to train the model and plot the results. The training process included preparing the data dividing it into training, and test sets. Then training the model using the training data and evaluating the performance, as shown below.
+
+<img width="526" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/aefe0b2c-4049-4b63-ad9c-681d4d5b8e87">
+<img width="499" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/2c6e0d59-0ab9-4547-84b4-cfa3c08a80a7">
+
+
+3. Once the model is trained and plotted, the next task is to analyze the performance of the time lag variable. By varying the time lag, it assesses how the models accuracy is influenced. The code is shown below
+
+<img width="667" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/697bb6bb-9000-49fe-a56b-c8f54990c76a">
+<img width="727" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/1f1ccd34-8195-4b02-8a83-9617fc02ff10">
+
+
+
+4. The next task was to analyze the impact of Gaussian noise concatenatd with the SST data. This helped me to understand how the model responds to noisy input in realistic scenarios where noise is added.
+
+
+<img width="704" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/507d5255-93c0-4649-b290-364421516c25">
+<img width="721" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/c8ec57b6-c9d8-40ca-871d-eb3471d36fc7">
+
+5. The last task was to investigate the performance of SHRED model as a function of the number of sensors. Randomly using different sensor locations, the model is evaluated for the accuracy for varying sensor counts.
+
+
+<img width="691" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/14f9fe1f-9e12-476d-9a49-678e062ebaf7">
+
+
+<img width="716" alt="image" src="https://github.com/zmeek10/EE-399-HW-1/assets/130122289/43819311-f359-4bcc-839f-418fe35547bb">
+
+
+Overall The tasks in the assignment helped me gain insight on the models capabilities, and reactions to various different factors.
